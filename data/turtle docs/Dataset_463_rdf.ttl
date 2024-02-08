@@ -1,0 +1,45 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://sciensano.be/dataset/COVID19BE_VACC_STATUS> rdfs:label "Number of people (re)vaccinated against covid-19 in Belgium by date, region, age, sex, and brand" ;
+    hda:aggregated_data "Yes" ;
+    hda:data_domain "Determinants of health" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "?" ;
+    hda:open_data "yes" ;
+    hda:original_data_provider "?" ;
+    hda:period_coverage "[29-12-2020; current]" ;
+    hda:reference_data "no" ;
+    hda:update_frequency "Weekly" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "This dataset contains information on individuals who have received COVID-19 vaccine doses, including both initial vaccinations and any subsequent revaccinations. The data is organized by the date of vaccination, geographical region, age groups, gender, and the specific brand of the COVID-19 vaccine administered."@en,
+        "Ce jeu de données contient des informations sur les personnes ayant reçu des doses de vaccin COVID-19, comprenant à la fois les vaccinations initiales et les revaccinations ultérieures. Les données sont organisées par la date de vaccination, la région géographique, les groupes d'âge, le genre et la marque spécifique du vaccin COVID-19 administré."@fr,
+        "Deze dataset bevat informatie over personen die COVID-19 vaccindoses hebben ontvangen, inclusief zowel de initiële vaccinaties als eventuele latere herhaalvaccinaties. De gegevens zijn georganiseerd op basis van de vaccinatiedatum, geografische regio, leeftijdsgroepen, geslacht en het specifieke merk van het COVID-19-vaccin dat is toegediend."@nl ;
+    dct:language "EN" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "COVID19BE_VACC_STATUS" ;
+    dcat:distribution "csv, json" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "Last week" ;
+    dcat:provenance "?" ;
+    dcat:publisher <http://sciensano.be> ;
+    dcat:theme "Health" ;
+    dcat:version "?" ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://sciensano.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://sciensano.be> ] .
+

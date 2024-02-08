@@ -1,0 +1,45 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://famhp.fgov.be/dataset/AuthorisationComponent> rdfs:label "Authorisation Component(s)" ;
+    hda:aggregated_data "No" ;
+    hda:data_domain "Medical product" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "No" ;
+    hda:open_data "Yes" ;
+    hda:original_data_provider "AFMPS / FAGG " ;
+    hda:period_coverage "N/A" ;
+    hda:reference_data "No" ;
+    hda:update_frequency "Real time" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "A data set containing the components of a product counter (PC) and enabling the link to be made between the product and information on pharmaceutical forms, routes of administration, active substances and excipients. Data set records help to link data together."@en,
+        "Ensemble de données contenant des composants d'un \"product counter\" (PC) et permettant de faire le lien entre le produit et les informations relatives aux formes pharmaceutiques, voies d'administration, substances actives et excipients. Les enregistrements de l'ensemble de données aident à relier les données entre elles."@fr,
+        "Een gegevensreeks die de componenten van een \"product counter\" (PC) bevat en waarmee een verband kan worden gelegd tussen het product en informatie over farmaceutische vormen, toedieningswijzen, werkzame stoffen en hulpstoffen. De gegevensrecords helpen om de gegevens aan elkaar te koppelen."@nl ;
+    dct:language "EN,FR,NL,DE" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "AuthorisationComponent" ;
+    dcat:distribution "JSON" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "13/10/2023" ;
+    dcat:provenance "Pharmastatus API" ;
+    dcat:publisher <http://famhp.fgov.be> ;
+    dcat:theme "Health" ;
+    dcat:version "Openapi 3.0.1" ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://famhp.fgov.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://famhp.fgov.be> ] .
+

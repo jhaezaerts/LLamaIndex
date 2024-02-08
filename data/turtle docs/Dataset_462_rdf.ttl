@@ -1,0 +1,45 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://sciensano.be/dataset/COVID19BE_VACC_MORT> rdfs:label "Number of covid-19 vaccinated people deceased before 2023 in belgium by region, age group, sex, and last dose received" ;
+    hda:aggregated_data "Yes" ;
+    hda:data_domain "Determinants of health" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "?" ;
+    hda:open_data "yes" ;
+    hda:original_data_provider "?" ;
+    hda:period_coverage "2022" ;
+    hda:reference_data "no" ;
+    hda:update_frequency "Weekly" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "This datset contains information on individuals who were vaccinated against COVID-19 and subsequently died before the year 2023. The data is organized by region, age group, and gender, providing details on the number of vaccinated individuals who passed away, along with information on the last dose they received."@en,
+        "Ce jeu de données contient des informations sur les personnes qui ont été vaccinées contre le COVID-19 et sont décédées par la suite avant l'année 2023. Les données sont organisées par région, groupe d'âge et sexe, fournissant des détails sur le nombre de personnes vaccinées décédées, ainsi que des informations sur la dernière dose qu'elles ont reçue."@fr,
+        "Deze dataset bevat informatie over personen die tegen COVID-19 zijn ingeënt en vervolgens zijn overleden vóór het jaar 2023. De gegevens zijn georganiseerd per regio, leeftijdsgroep en geslacht, en verstrekken details over het aantal gevaccineerde personen dat is overleden, samen met informatie over de laatste dosis die ze hebben ontvangen."@nl ;
+    dct:language "EN" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "COVID19BE_VACC_MORT" ;
+    dcat:distribution "csv, json" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "Last week" ;
+    dcat:provenance "?" ;
+    dcat:publisher <http://sciensano.be> ;
+    dcat:theme "Health" ;
+    dcat:version "10/10/2023" ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://sciensano.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://sciensano.be> ] .
+

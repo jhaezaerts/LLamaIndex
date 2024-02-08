@@ -1,0 +1,46 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://famhp.fgov.be/dataset/Authorisation%20> rdfs:label "Authorisation(s)" ;
+    hda:aggregated_data "No" ;
+    hda:data_domain "Medical product" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "No" ;
+    hda:open_data "Yes" ;
+    hda:original_data_provider "AFMPS / FAGG " ;
+    hda:period_coverage "N/A" ;
+    hda:reference_data "No" ;
+    hda:update_frequency "Real time" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "Dataset with current permissions and approvals granted to sell medicinal products.  "@en,
+        "Ensemble de données contenant les autorisations et agréments actuels accordés pour la vente de médicaments."@fr,
+        "Dataset met huidige toestemmingen en goedkeuringen voor de verkoop van geneesmiddelen."@nl ;
+    dct:language "EN,FR,NL,DE" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "Authorisation " ;
+    dcat:distribution "JSON" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "2023-11-10T00:00:00"^^xsd:dateTime ;
+    dcat:provenance "Pharmastatus API" ;
+    dcat:publisher <http://famhp.fgov.be> ;
+    dcat:theme "Health" ;
+    dcat:version "Openapi 3.0.1" ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://famhp.fgov.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://famhp.fgov.be> ] .
+

@@ -1,0 +1,45 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://sciensano.be/dataset/COVID19BE_MORT_DIAGNOSTIC> rdfs:label "Deaths from COVID-19 in Belgium by week, age, region of residence and case classification" ;
+    hda:aggregated_data "Yes" ;
+    hda:data_domain "Individual health status" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "?" ;
+    hda:open_data "yes" ;
+    hda:original_data_provider "?" ;
+    hda:period_coverage "[2020-W10 ; 2023-W26]" ;
+    hda:reference_data "no" ;
+    hda:update_frequency "No more updated" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "This dataset contains information on fatalities attributed to COVID-19 in Belgium. The data is structured to provide details on a weekly basis, specifying the age of the deceased individuals, their region of residence within Belgium, and the classification of their COVID-19 cases (e.g., confirmed, probable). "@en,
+        "Ce jeu de données contient des informations sur les décès attribués au COVID-19 en Belgique. Les données sont structurées pour fournir des détails de manière hebdomadaire, en précisant l'âge des personnes décédées, leur région de résidence en Belgique, et la classification de leurs cas de COVID-19 (par exemple, confirmé, probable)."@fr,
+        "Deze dataset bevat informatie over overlijdens als gevolg van COVID-19 in België. De gegevens zijn gestructureerd om wekelijks details te verstrekken, waarbij de leeftijd van de overledenen, hun regio van verblijf binnen België, en de classificatie van hun COVID-19-gevallen (bijvoorbeeld bevestigd, waarschijnlijk) worden gespecificeerd."@nl ;
+    dct:language "EN" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "COVID19BE_MORT_DIAGNOSTIC" ;
+    dcat:distribution "csv, json" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "Last week" ;
+    dcat:provenance "?" ;
+    dcat:publisher <http://sciensano.be> ;
+    dcat:theme "Health" ;
+    dcat:version "10/10/23" ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://sciensano.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://sciensano.be> ] .
+

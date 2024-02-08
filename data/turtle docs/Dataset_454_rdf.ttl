@@ -1,0 +1,45 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://sciensano.be/dataset/COVID19BE_MORT> rdfs:label "Deaths from COVID-19 in Belgium by date, region, age and sex" ;
+    hda:aggregated_data "Yes" ;
+    hda:data_domain "Determinants of health" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "?" ;
+    hda:open_data "yes" ;
+    hda:original_data_provider "?" ;
+    hda:period_coverage "[7/3/23 ; 30/6/23]" ;
+    hda:reference_data "no" ;
+    hda:update_frequency "No more updated" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "This dataset provides information about the number of fatalities attributed to COVID-19 in Belgium. The data is likely organized based on the date of death, geographical region within Belgium, specific age groups, and the gender of the deceased individuals."@en,
+        "Ce jeu de données fournit des informations sur le nombre de décès attribués au COVID-19 en Belgique. Les données sont probablement organisées en fonction de la date du décès, de la région géographique en Belgique, des groupes d'âge spécifiques et du sexe des personnes décédées."@fr,
+        "Deze dataset bevat informatie over het aantal overlijdens als gevolg van COVID-19 in België. De gegevens zijn waarschijnlijk georganiseerd op basis van de datum van overlijden, de geografische regio binnen België, specifieke leeftijdsgroepen en het geslacht van de overleden personen."@nl ;
+    dct:language "EN" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "COVID19BE_MORT" ;
+    dcat:distribution "csv, json" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "23/08/2023" ;
+    dcat:provenance "?" ;
+    dcat:publisher <http://sciensano.be> ;
+    dcat:theme "Health" ;
+    dcat:version "10/10/23" ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://sciensano.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://sciensano.be> ] .
+

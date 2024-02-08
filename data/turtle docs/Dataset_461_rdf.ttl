@@ -1,0 +1,45 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://sciensano.be/dataset/COVID19BE_VACC_MUNI_CUM> rdfs:label "Cumulative number of administered covid-19 vaccines in belgium by week, municipality, age, and dose" ;
+    hda:aggregated_data "Yes" ;
+    hda:data_domain "Determinants of health" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "?" ;
+    hda:open_data "yes" ;
+    hda:original_data_provider "?" ;
+    hda:period_coverage "[20W53 ; 23W39]" ;
+    hda:reference_data "no" ;
+    hda:update_frequency "No more updated" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "This datset contains information on the total number of COVID-19 vaccine doses administered over time. The data is organized on a weekly basis and provides details on the cumulative count of vaccine doses given in different municipalities of Belgium."@en,
+        "Ce jeu de données contient des informations sur le nombre total de doses de vaccin COVID-19 administrées au fil du temps. Les données sont organisées de manière hebdomadaire et fournissent des détails sur le nombre cumulatif de doses de vaccin administrées dans différentes communes de Belgique."@fr,
+        "Deze dataset bevat informatie over het totale aantal COVID-19 vaccindoses dat in de loop van de tijd is toegediend. De gegevens zijn op wekelijkse basis georganiseerd en verstrekken details over het cumulatieve aantal vaccindoses dat is toegediend in verschillende gemeenten in België."@nl ;
+    dct:language "EN" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "COVID19BE_VACC_MUNI_CUM" ;
+    dcat:distribution "csv, json" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "Last week" ;
+    dcat:provenance "?" ;
+    dcat:publisher <http://sciensano.be> ;
+    dcat:theme "Health" ;
+    dcat:version "10/10/2023" ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://sciensano.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://sciensano.be> ] .
+

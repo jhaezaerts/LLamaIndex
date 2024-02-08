@@ -1,0 +1,45 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://sciensano.be/dataset/COVID19BE_HOSP> rdfs:label "Hospitalisations due to COVBID-19 in Belgium by date and province" ;
+    hda:aggregated_data "Yes" ;
+    hda:data_domain "Medical activity" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "?" ;
+    hda:open_data "yes" ;
+    hda:original_data_provider "?" ;
+    hda:period_coverage "[6/3/20 ; 27/6/23]" ;
+    hda:reference_data "no" ;
+    hda:update_frequency "No more updated" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "This dataset contains information about the number of individuals hospitalized due to COVID-19 in different provinces of Belgium. The data is organized by date, allowing for the tracking of hospitalizations over time."@en,
+        "Ce jeu de données contient des informations sur le nombre de personnes hospitalisées en raison du COVID-19 dans différentes provinces de Belgique. Les données sont organisées par date, permettant le suivi des hospitalisations au fil du temps."@fr,
+        "Deze dataset bevat informatie over het aantal personen dat is opgenomen in het ziekenhuis vanwege COVID-19 in verschillende provincies van België. De gegevens zijn georganiseerd op datum, waardoor het mogelijk is om de ziekenhuisopnames in de loop van de tijd te volgen."@nl ;
+    dct:language "EN" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "COVID19BE_HOSP" ;
+    dcat:distribution "csv, json" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "27/06/2023" ;
+    dcat:provenance "COVID19BE_HOSP" ;
+    dcat:publisher <http://sciensano.be> ;
+    dcat:theme "Health" ;
+    dcat:version "10/10/23" ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://sciensano.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://sciensano.be> ] .
+

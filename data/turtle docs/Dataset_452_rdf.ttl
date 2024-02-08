@@ -1,0 +1,46 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sciensano.be/dataset/COVID19BE_CASES_MUNI_CUM> rdfs:label "Cumulative number of confirmed covid-19 cases in belgium by municipality" ;
+    hda:aggregated_data "Yes" ;
+    hda:data_domain "Determinants of health" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "?" ;
+    hda:open_data "yes" ;
+    hda:original_data_provider "?" ;
+    hda:period_coverage "?" ;
+    hda:reference_data "no" ;
+    hda:update_frequency "No more updated" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "This dataset contains information on the total number of confirmed COVID-19 cases reported in different municipalities of Belgium over a specified period."@en,
+        "Ce jeu de données contient des informations sur le nombre total de cas confirmés de COVID-19 signalés dans différentes communes de Belgique sur une période spécifiée."@fr,
+        "Deze dataset bevat informatie over het totale aantal bevestigde COVID-19 gevallen gemeld in verschillende gemeenten van België over een bepaalde periode."@nl ;
+    dct:language "EN" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "COVID19BE_CASES_MUNI_CUM" ;
+    dcat:distribution "csv; json" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "2023-11-10T00:00:00"^^xsd:dateTime ;
+    dcat:provenance "?" ;
+    dcat:publisher <http://sciensano.be> ;
+    dcat:theme "Health" ;
+    dcat:version "10/10/23" ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://sciensano.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://sciensano.be> ] .
+

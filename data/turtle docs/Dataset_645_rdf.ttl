@@ -1,0 +1,46 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://nihdi.fgov.be/dataset/DimHCWorker> rdfs:label "Dimension Healthcare Worker" ;
+    hda:aggregated_data "No" ;
+    hda:data_domain "Actor / Party" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "No" ;
+    hda:open_data "Mix" ;
+    hda:original_data_provider "Cobhra" ;
+    hda:period_coverage "N/A" ;
+    hda:reference_data "Yes" ;
+    hda:update_frequency "Daily" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "The dataset of the health data company encompasses a range of data fields, offering comprehensive information about healthcare workers and their respective details."@en,
+        "Le jeu de données de la société de données de santé englobe une variété de champs de données, fournissant des informations complètes sur les travailleurs de la santé et leurs détails respectifs."@fr,
+        "De dataset van het gezondheidsgegevensbedrijf omvat verschillende gegevensvelden en biedt uitgebreide informatie over zorgmedewerkers en hun respectieve gegevens."@nl ;
+    dct:language "NL, FR" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "DimHCWorker" ;
+    dcat:distribution "SQL Server view" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "Today" ;
+    dcat:provenance "DWHHealthCare" ;
+    dcat:publisher <http://nihdi.fgov.be> ;
+    dcat:theme "Health" ;
+    dcat:version 1 ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://nihdi.fgov.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://nihdi.fgov.be> ] .
+

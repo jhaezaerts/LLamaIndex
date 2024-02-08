@@ -1,0 +1,46 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hda: <http://hda.fgov.be/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sciensano.be/dataset/COVID19BE_NH> rdfs:label "Confirmed Covid-19 case, hospitalisation and death rates among nursing home residents in Belgium by week and region/community" ;
+    hda:aggregated_data "Yes" ;
+    hda:data_domain "Determinants of health" ;
+    hda:data_usage_license "?" ;
+    hda:geographical_coverage "Belgium" ;
+    hda:master_source_flag "?" ;
+    hda:open_data "yes" ;
+    hda:original_data_provider "?" ;
+    hda:period_coverage "[20W10 ; 23W17]" ;
+    hda:reference_data "no" ;
+    hda:update_frequency "No more updated" ;
+    dct:accessRights "?" ;
+    dct:accrualPeriodicity "?" ;
+    dct:description "?"@de,
+        "This dataset contains information on the impact of COVID-19 specifically on residents of nursing homes in Belgium. The data is organized by week, providing details on the number of confirmed COVID-19 case, hospitalization, and death rates among nursing home residents. Additionally, the dataset distinguishes these figures based on different regions within Belgium."@en,
+        "Ce jeu de données contient des informations sur l'impact spécifique du COVID-19 sur les résidents des maisons de repos en Belgique. Les données sont organisées par semaine, fournissant des détails sur le nombre de cas confirmés de COVID-19, les taux d'hospitalisation et de décès parmi les résidents des maisons de repos. De plus, le jeu de données distingue ces chiffres en fonction des différentes régions de la Belgique."@fr,
+        "Deze dataset bevat informatie over de impact van COVID-19 specifiek op bewoners van rusthuizen in België. De gegevens zijn georganiseerd per week en verstrekken details over het aantal bevestigde COVID-19-gevallen, ziekenhuisopnames en sterftecijfers onder de bewoners van rusthuizen. Daarnaast maakt de dataset onderscheid tussen deze cijfers op basis van verschillende regio's binnen België."@nl ;
+    dct:language "EN" ;
+    dct:license "?" ;
+    dct:spatial "?" ;
+    dct:temporal "?" ;
+    rdfs:type dcat:dataset ;
+    skos:altLabel "COVID19BE_NH" ;
+    dcat:distribution "csv, JSON" ;
+    dcat:keyword "?" ;
+    dcat:landingPage "?" ;
+    dcat:modified "2023-04-05T00:00:00"^^xsd:dateTime ;
+    dcat:provenance "?" ;
+    dcat:publisher <http://sciensano.be> ;
+    dcat:theme "Health" ;
+    dcat:version "?" ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#owner> ;
+            prov:agent <http://sciensano.be> ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml#custodian> ;
+            prov:agent <http://sciensano.be> ] .
+
