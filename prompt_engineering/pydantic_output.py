@@ -25,6 +25,6 @@ class SddData(BaseModel):
     - columns: The column names of the dataset and their label.
     - pii: Column_sensitive_personal_data as indicator for pii.
     """
-    columns: List[List[Tuple[str | None, str | None] | None] | None] | None
+    columns: List[List[Tuple[str,]]]
     pii: bool
     
